@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROAY LESTARI - Toko Buah, Sayur Segar & Olahan Herbal Terpercaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Tambahan styling untuk memastikan tombol berfungsi */
+        .btn-primary, .btn-secondary, .cta-button {
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .product-info a.btn-primary {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .product-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-info {
+            position: relative;
+            z-index: 5;
+        }
+        
+        /* Styling untuk peta */
+        .location-map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .location-map iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-leaf"></i>
+                    ROAY LESTARI
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+                <a href="https://wa.me/6285223302042" class="cta-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>ROAY LESTARI - Buah, Sayur Segar & Olahan Herbal</h1>
+                    <p>Sejak 2021, kami menyediakan buah dan sayur segar berkualitas tinggi, serta berbagai olahan herbal tradisional untuk kesehatan optimal keluarga Indonesia.</p>
+                    <div class="hero-buttons">
+                        <a href="#produk" class="btn-primary">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mengapa Memilih ROAY LESTARI?</h2>
+                <p>Kami menghadirkan yang terbaik untuk kesehatan keluarga Anda</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Produk Segar</h3>
+                    <p>Buah dan sayur segar langsung dari petani lokal, dipetik di waktu yang tepat untuk menjaga kesegarannya.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3>Olahan Alami</h3>
+                    <p>Berbagai olahan herbal tradisional dari bahan-bahan alami tanpa campuran kimia berbahaya.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Terpercaya</h3>
+                    <p>Sudah melayani pelanggan sejak 2010 dengan reputasi yang terjaga.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produk">
+        <div class="container">
+            <div class="section-title">
+                <h2>Produk Unggulan Kami</h2>
+                <p>Berbagai olahan herbal dan makanan sehat untuk kebutuhan sehari-hari</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/wedang-jahe.jpg" alt="Wedang Jahe">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wedang Jahe</h3>
+                        <p>Minuman herbal hangat dengan jahe pilihan dan rempah-rempah alami untuk menghangatkan tubuh dan meningkatkan stamina.</p>
+                        <div class="product-price">Rp 25.000</div>
+                        <a href="https://wa.me/6285223302042?text=Halo,%20saya%20tertarik%20dengan%20Wedang%20Jahe%20dan%20ingin%20memesan" class="btn-primary whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/salad-sayur.jpg" alt="Salad Sayur">
+                    </div>
+                    <div class="product-info">
+                        <h3>Salad Sayur</h3>
+                        <p>Kombinasi sayuran segar dengan dressing khusus untuk melengkapi gaya hidup sehat Anda.</p>
+                        <div class="product-price">Rp 35.000</div>
+                        <a href="https://wa.me/6285223302042?text=Halo,%20saya%20tertarik%20dengan%20Salad%20Sayur%20dan%20ingin%20memesan" class="btn-primary whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="images/wedang-kering.jpg" alt="Wedang Kering">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wedang Kering</h3>
+                        <p>Minuman herbal kering praktis yang bisa diseduh kapan saja, terbuat dari jahe pilihan dan rempah-rempah berkualitas.</p>
+                        <div class="product-price">Rp 30.000</div>
+                        <a href="https://wa.me/6285223302042?text=Halo,%20saya%20tertarik%20dengan%20Wedang%20Kering%20dan%20ingin%20memesan" class="btn-primary whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang ROAY LESTARI</h2>
+                    <p>ROAY LESTARI telah melayani masyarakat sejak tahun 2021 dengan komitmen menghadirkan buah, sayur segar berkualitas tinggi dan berbagai olahan herbal tradisional. Kami percaya bahwa kesehatan yang baik berasal dari konsumsi makanan segar dan alami.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-history"></i>
+                            <div>
+                                <h4>Pengalaman Lebih dari 4 Tahun</h4>
+                                <p>Melayani dengan pengalaman panjang dalam menyediakan produk segar dan olahan herbal</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Lokasi Strategis</h4>
+                                <p>Berdiri di Gn. Roxy, Kahuripan, Tawang - mudah dijangkau</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/toko-roay-lestari.jpg" alt="Toko ROAY LESTARI">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lokasi Toko Kami</h2>
+                <p>Kunjungi toko kami untuk mendapatkan produk segar langsung</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>ROAY LESTARI</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Kahuripan, Tawang, Kota Tasikmalaya, Jawa Barat</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>085223302042</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Minggu: 08.00 - 20.00 WIB</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/place/KWT+Roay+Lestari+Kel.+Kahuripan/@-7.3530032,108.2259596,17z/data=!4m15!1m8!3m7!1s0x2e6f57091e5e3be5:0x5594abdab5a3f4b2!2sKWT+Roay+Lestari+Kel.+Kahuripan!8m2!3d-7.3537536!4d108.2261403!10e5!16s%2Fg%2F11v9yjd20n!3m5!1s0x2e6f57091e5e3be5:0x5594abdab5a3f4b2!8m2!3d-7.3537536!4d108.2261403!16s%2Fg%2F11v9yjd20n?entry=ttu&g_ep=EgoyMDI5MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="btn-primary" target="_blank">
+                        <i class="fas fa-map"></i> Lihat di Google Maps
+                    </a>
+                </div>
+                <div class="location-map">
+                    <!-- Peta interaktif Google Maps -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.123456789012!2d108.2239514!3d-7.3537536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f57091e5e3be5%3A0x5594abdab5a3f4b2!2sKWT%20Roay%20Lestari%20Kel.%20Kahuripan!5e0!3m2!1sen!2sid!4v1700000000000" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="kontak">
+        <div class="container">
+            <h2>Siap Menikmati Produk Berkualitas Kami?</h2>
+            <p>Dapatkan wedang jahe, salad sayur, dan wedang kering terbaik untuk keluarga Anda</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/6285223302042" class="btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+                </a>
+                <a href="tel:085223302042" class="btn-secondary">
+                    <i class="fas fa-phone"></i> Telepon Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ROAY LESTARI</h3>
+                    <p>Toko buah, sayur segar dan olahan herbal yang telah melayani masyarakat sejak 2010 dengan produk berkualitas untuk kesehatan keluarga Indonesia.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100076154045945" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/6285223302042" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Produk</h3>
+                    <ul class="footer-links">
+                        <li><a href="#produk">Wedang Jahe</a></li>
+                        <li><a href="#produk">Salad Sayur</a></li>
+                        <li><a href="#produk">Wedang Kering</a></li>
+                        <li><a href="#produk">Olahan Lainnya</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Layanan</h3>
+                    <ul class="footer-links">
+                        <li><a href="#tentang">Konsultasi Produk</a></li>
+                        <li><a href="#testimoni">Testimoni</a></li>
+                        <li><a href="#kontak">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i>Kahuripan, Tawang, Kota Tasikmalaya, Jawa Barat </li>
+                        <li><i class="fas fa-phone"></i> 085223302042 </li>
+                        <li><i class="fas fa-clock"></i> Setiap Hari: 08.00 - 20.00 WIB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ROAY LESTARI. Semua Hak Dilindungi. | Toko Buah, Sayur & Herbal Terpercaya Sejak 2010</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript untuk memastikan tombol WhatsApp berfungsi
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tambahkan event listener untuk semua tombol WhatsApp
+            const whatsappButtons = document.querySelectorAll('.whatsapp-btn');
+            
+            whatsappButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    console.log('Tombol WhatsApp diklik');
+                    // Biarkan link membuka WhatsApp secara normal
+                });
+            });
+            
+            // Debug: Log untuk memastikan script berjalan
+            console.log('WhatsApp buttons initialized:', whatsappButtons.length);
+        });
+    </script>
+</body>
+</html>
